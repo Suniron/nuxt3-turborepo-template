@@ -1,0 +1,32 @@
+{
+  "name": "monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "clean": "turbo run clean && rm -rf node_modules",
+    "dev": "turbo run dev --parallel",
+    "lint": "turbo run lint",
+    "lint:fix": "turbo run lint:fix",
+    "test": "turbo run test",
+    "typecheck": "turbo run typecheck"
+  },
+  "jest": {
+    "preset": "jest-presets/jest/node"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "@monorepo/prettier": "workspace:*",
+    "eslint": "^8.44.0",
+    "eslint-config-custom": "workspace:*",
+    "jest-presets": "workspace:*",
+    "prettier": "3.0.0",
+    "turbo": "^1.10.8"
+  },
+  "packageManager": "pnpm@7.33.4",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

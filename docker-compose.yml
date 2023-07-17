@@ -1,0 +1,14 @@
+version: "3.4"
+services:
+  # FRONT
+  nuxt3:
+    container_name: nuxt3
+    build:
+      context: .
+      dockerfile: ./apps/nuxt3/Dockerfile
+      target: runner
+    environment:
+      - NODE_ENV=production
+    ports:
+      - "3003:3003"
+    restart: always

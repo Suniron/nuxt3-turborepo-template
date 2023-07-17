@@ -1,0 +1,50 @@
+{
+  "jest.autoRun": {
+    "watch": false,
+    "onSave": "test-file",
+    "onStartup": [
+      "all-tests"
+    ]
+  },
+  "jest.jestCommandLine": "./packages/configs/jest-presets/node_modules/jest/bin/jest.js",
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/.hg/store/**": true,
+    "**/node_modules/*/**": true
+  },
+  "files.eol": "\n",
+  "editor.tabSize": 2,
+  "files.autoSave": "onFocusChange",
+  "editor.rulers": [
+    80
+  ],
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "eslint.validate": [
+    "javascript",
+    "typescript",
+    "vue",
+    "vue-html"
+  ],
+  "eslint.workingDirectories": [
+    {
+      "mode": "auto"
+    }
+  ],
+  "prettier.enable": false,
+  "editor.formatOnSave": false,
+  "[typescript]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll": false,
+      "source.fixAll.eslint": true,
+    },
+  },
+  "[vue]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll": false,
+      "source.fixAll.eslint": true,
+    },
+  },
+  "typescript.tsdk": "node_modules/typescript/lib",
+}

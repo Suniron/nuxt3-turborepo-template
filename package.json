@@ -23,7 +23,7 @@
     "eslint-config-custom": "workspace:*",
     "jest-presets": "workspace:*",
     "prettier": "3.0.0",
-    "turbo": "^1.10.8"
+    "turbo": "^1.10.11"
   },
   "packageManager": "pnpm@7.33.4",
   "engines": {

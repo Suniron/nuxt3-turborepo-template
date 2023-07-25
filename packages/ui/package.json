@@ -6,8 +6,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["ui", "vue", "nuxt"],
+  "keywords": [
+    "ui",
+    "vue",
+    "nuxt"
+  ],
   "dependencies": {
-    "@nuxt/kit": "latest"
+    "@nuxt/kit": "^3.6.5"
   }
 }
